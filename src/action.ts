@@ -13,7 +13,7 @@ export class Action {
     const optionalInputKey = getInput('optionalInputKey', { required: false });
 
     info(`Input: ${inputKey}`);
-    info(`Optuonal Input: ${optionalInputKey}`);
+    info(`Optional Input: ${optionalInputKey}`);
 
     if (!GITHUB_REPOSITORY) {
       throw new Error('Missing GITHUB_REPOSITORY environment variable');
