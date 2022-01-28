@@ -9,11 +9,11 @@ export class Action {
       return;
     }
 
-    const input = getInput('input', { required: true });
-    const optionalInput = getInput('optionalInput', { required: false });
+    const inputKey = getInput('inputKey', { required: true });
+    const optionalInputKey = getInput('optionalInputKey', { required: false });
 
-    info(`Input: ${input}`);
-    info(`Optuonal Input: ${optionalInput}`);
+    info(`Input: ${inputKey}`);
+    info(`Optuonal Input: ${optionalInputKey}`);
 
     if (!GITHUB_REPOSITORY) {
       throw new Error('Missing GITHUB_REPOSITORY environment variable');
